@@ -13,10 +13,8 @@ namespace Clases_genericas_de_P.C.LL
             #region Pila
             int res = 0;
             Stack<int> Mi_pila = new Stack<int>();
-            Mi_pila.Push(1);
             Mi_pila.Push(20);
             Mi_pila.Push(13);
-            Mi_pila.Push(4);
             Mi_pila.Push(53);
             Console.WriteLine(" == Mi pila == ");
             foreach (var i in Mi_pila)
@@ -30,6 +28,7 @@ namespace Clases_genericas_de_P.C.LL
 
             #region Cola
             Console.Clear();
+            double dou_res = 1.00;
             Queue<double> Mi_cola = new Queue<double>();
             Mi_cola.Enqueue(1.5);
             Mi_cola.Enqueue(12.4);
@@ -40,7 +39,9 @@ namespace Clases_genericas_de_P.C.LL
             foreach (var i in Mi_cola)
             {
                 Console.WriteLine("-- " + i);
+                dou_res *= i;
             }
+            Console.WriteLine("Multiplicacion es: " + dou_res);
             Console.ReadKey();
             #endregion
 
