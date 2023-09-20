@@ -51,19 +51,16 @@ namespace Clases_genericas_de_P.C.LL
             Mi_linked_list.AddLast("A");
             Mi_linked_list.AddLast("B");
             Mi_linked_list.AddLast("C");
-
             Console.WriteLine("== Lista enlazada == ");
             foreach (var item in Mi_linked_list)
             {
                 Console.WriteLine("-- " + item);
             }
-
             LinkedListNode<string> nodo = Mi_linked_list.Find("B");
             if (nodo != null)
             {
                 Mi_linked_list.AddAfter(nodo, "D");
             }
-
             Console.WriteLine("\n== Lista enlazada después de insertar 'D' ==");
             foreach (var item in Mi_linked_list)
             {
